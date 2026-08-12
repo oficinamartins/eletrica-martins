@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elétrica Martins | Conserto e Manutenção de Ferramentas Elétricas</title>
+<meta name="description" content="Elétrica Martins em Itaporanga-PB. Conserto e manutenção de ferramentas elétricas, diagnóstico, troca de componentes e garantia de 90 dias nos serviços.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#ed101b;--red2:#a90008;--yellow:#ffd600;--black:#070707;--panel:#121212;--panel2:#1b1b1b;--text:#f7f7f7;--muted:#b7b7b7;--line:#2b2b2b;--green:#20c96b}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;background:var(--black);color:var(--text);overflow-x:hidden}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.container{width:min(1180px,92%);margin:auto}
+header{position:fixed;inset:0 0 auto;z-index:1000;background:rgba(5,5,5,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:62px;height:62px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(237,16,27,.25))}.brand-copy strong{font-family:'Barlow Condensed',sans-serif;font-size:27px;line-height:.9;letter-spacing:.5px;text-transform:uppercase}.brand-copy span{display:block;color:var(--yellow);font-size:10px;letter-spacing:1.8px;text-transform:uppercase;margin-top:5px}.menu{display:flex;align-items:center;gap:24px}.menu>a:not(.nav-cta){font-size:14px;font-weight:600;color:#ddd}.menu>a:hover{color:var(--yellow)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:8px;font-weight:800;transition:.25s ease}.nav-cta{background:var(--red);padding:13px 18px}.nav-cta:hover,.btn-red:hover{background:#ff2832;transform:translateY(-2px)}
+.hero{min-height:760px;position:relative;display:flex;align-items:center;padding:128px 0 70px;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.82) 44%,rgba(0,0,0,.18) 100%),linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,0) 55%);z-index:2}.hero:after{content:"";position:absolute;width:420px;height:1000px;background:linear-gradient(var(--red),#700006);right:-250px;top:-130px;transform:rotate(20deg);z-index:1;opacity:.75}
+.carousel,.slides,.slide{position:absolute;inset:0}.slide{opacity:0;transition:opacity 1s ease;background-size:cover;background-position:center}.slide.active{opacity:1}.slide:nth-child(1){background-image:url('slide1.jpg')}.slide:nth-child(2){background-image:url('slide2.jpg')}.slide:nth-child(3){background-image:url('slide3.jpg')}.slide:nth-child(4){background-image:url('slide4.jpg')}.slide{transform:scale(1.03)}.slide.active{animation:zoom 6s linear forwards}@keyframes zoom{to{transform:scale(1.10)}}
+.hero-content{position:relative;z-index:3;max-width:720px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,214,0,.42);background:rgba(255,214,0,.08);color:var(--yellow);padding:8px 13px;border-radius:99px;font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.hero h1{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;font-weight:900;font-size:clamp(58px,8vw,106px);line-height:.84;letter-spacing:-1px;margin:22px 0}.hero h1 span{color:var(--red);text-shadow:0 0 26px rgba(237,16,27,.2)}.hero p{max-width:630px;font-size:18px;line-height:1.72;color:#d4d4d4}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{padding:15px 21px}.btn-red{background:var(--red)}.btn-outline{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05)}.btn-outline:hover{border-color:var(--yellow);color:var(--yellow);transform:translateY(-2px)}
+.hero-badges{display:flex;flex-wrap:wrap;gap:18px;margin-top:42px}.hero-badge{padding-left:13px;border-left:3px solid var(--red)}.hero-badge b{display:block;font-family:'Barlow Condensed';font-size:22px;text-transform:uppercase}.hero-badge small{color:#9f9f9f}.dots{position:absolute;left:50%;transform:translateX(-50%);bottom:24px;z-index:5;display:flex;gap:8px}.dot{width:28px;height:4px;border:0;background:#666;cursor:pointer;border-radius:5px;transition:.25s}.dot.active{background:var(--red);width:48px}
+.stats{background:#0e0e0e;border-top:1px solid #1f1f1f;border-bottom:1px solid #1f1f1f}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:26px;border-right:1px solid #222}.stat:last-child{border-right:0}.stat strong{display:block;font-family:'Barlow Condensed';font-size:26px;text-transform:uppercase}.stat span{color:#999;font-size:13px}
+section{padding:92px 0}.section-head{margin-bottom:42px;max-width:760px}.section-head.center{text-align:center;margin-left:auto;margin-right:auto}.kicker{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:900}.section-head h2{font-family:'Barlow Condensed';font-size:clamp(40px,5vw,58px);line-height:.95;text-transform:uppercase;margin:10px 0 14px}.section-head h2 span{color:var(--red)}.section-head p{color:#a8a8a8;line-height:1.7}
+.services{background:linear-gradient(180deg,#0b0b0b,#111)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid #292929;border-radius:16px;padding:27px;transition:.28s;position:relative;overflow:hidden}.card:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:0;background:var(--red);transition:.28s}.card:hover{transform:translateY(-6px);border-color:#4b1619}.card:hover:after{width:100%}.ico{width:54px;height:54px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,var(--red),var(--red2));font-size:25px;margin-bottom:18px;box-shadow:0 10px 25px rgba(237,16,27,.16)}.card h3{font-size:19px;margin-bottom:9px}.card p{color:#9d9d9d;font-size:14px;line-height:1.65}
+.gallery{background:#080808}.equipment-track{display:flex;gap:18px;overflow:hidden;mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent)}.equipment-runner{display:flex;gap:18px;width:max-content;animation:marquee 28s linear infinite}.equipment-track:hover .equipment-runner{animation-play-state:paused}@keyframes marquee{to{transform:translateX(-50%)}}.equipment-item{width:320px;flex:none;background:#141414;border:1px solid #262626;border-radius:15px;overflow:hidden}.equipment-item img{width:100%;height:210px;object-fit:cover}.equipment-item div{padding:17px}.equipment-item h3{font-family:'Barlow Condensed';font-size:26px;text-transform:uppercase}.equipment-item p{color:#999;font-size:13px;margin-top:3px}
+.guarantee{background:linear-gradient(120deg,#b20008,#f0141f 62%,#9d0007);position:relative;overflow:hidden}.guarantee:before{content:"⚡";position:absolute;right:8%;top:50%;transform:translateY(-50%) rotate(-10deg);font-size:230px;color:rgba(255,214,0,.11)}.guarantee-wrap{position:relative;z-index:2;display:grid;grid-template-columns:.55fr 1.45fr;gap:45px;align-items:center}.big90{font-family:'Barlow Condensed';font-size:clamp(110px,17vw,220px);line-height:.7;font-weight:900;color:var(--yellow);text-shadow:0 10px 30px rgba(0,0,0,.2)}.guarantee h2{font-family:'Barlow Condensed';font-size:clamp(42px,6vw,68px);text-transform:uppercase;line-height:.95}.guarantee p{margin-top:14px;max-width:670px;line-height:1.65;color:#fff}
+.about{background:#101010}.about-grid{display:grid;grid-template-columns:1fr .9fr;gap:52px;align-items:center}.about-visual{position:relative;min-height:490px;background:linear-gradient(145deg,#1b1b1b,#090909);border:1px solid #2b2b2b;border-radius:22px;display:grid;place-items:center;overflow:hidden}.about-visual:after{content:"";position:absolute;width:220px;height:600px;background:var(--red);right:-140px;transform:rotate(18deg);opacity:.6}.about-visual img{width:min(420px,74%);position:relative;z-index:2;filter:drop-shadow(0 18px 28px rgba(0,0,0,.45))}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.check{background:#151515;border:1px solid #2b2b2b;border-radius:10px;padding:13px 14px;font-size:14px}.check b{color:var(--yellow);margin-right:6px}
+.process{background:#090909}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:#141414;border:1px solid #282828;border-radius:14px;padding:24px}.step .num{font-family:'Barlow Condensed';font-size:55px;color:var(--red);font-weight:900;line-height:1}.step h3{margin:9px 0 7px}.step p{color:#929292;font-size:14px;line-height:1.55}
+.contact{background:#111}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-card{background:#171717;border:1px solid #2a2a2a;border-radius:17px;padding:32px}.contact-card.red{background:linear-gradient(145deg,#d20b15,#8d0006);border-color:transparent}.contact-card h3{font-family:'Barlow Condensed';font-size:38px;text-transform:uppercase;line-height:1}.info-row{padding:15px 0;border-bottom:1px solid #2d2d2d}.info-row:last-child{border-bottom:0}.info-row small{display:block;color:#8f8f8f;margin-bottom:3px}.contact-card.red p{margin:15px 0 23px;line-height:1.65}.contact-card.red .btn{background:var(--yellow);color:#111}.contact-card.red .btn:hover{transform:translateY(-2px);background:#ffe54e}
+footer{background:#050505;border-top:1px solid #1c1c1c;padding:35px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:25px}.foot-brand{display:flex;align-items:center;gap:12px}.foot-brand img{width:66px}.foot p{color:#747474;font-size:13px}.float-wa{position:fixed;right:22px;bottom:22px;z-index:1000;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--green);font-size:28px;box-shadow:0 12px 30px rgba(0,0,0,.42);transition:.25s}.float-wa:hover{transform:scale(1.08)}
+.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.on{opacity:1;transform:none}
+@media(max-width:900px){.menu>a:not(.nav-cta){display:none}.service-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #222}.guarantee-wrap,.about-grid,.contact-grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.big90{font-size:150px}.hero:before{background:linear-gradient(90deg,rgba(0,0,0,.96),rgba(0,0,0,.7))}}
+@media(max-width:580px){.nav{height:72px}.brand img{width:50px;height:50px}.brand-copy strong{font-size:22px}.brand-copy span{display:none}.nav-cta{padding:11px 13px;font-size:12px}.hero{min-height:700px;padding-top:110px}.hero h1{font-size:60px}.hero p{font-size:16px}.service-grid,.steps,.checks{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid #222}.equipment-item{width:270px}.equipment-item img{height:185px}.foot{flex-direction:column;align-items:flex-start}.float-wa{width:56px;height:56px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="#inicio" class="brand">
+      <img src="logo.png" alt="Logo Elétrica Martins">
+      <div class="brand-copy"><strong>Elétrica Martins</strong><span>Conserto • Manutenção • Ferramentas Elétricas</span></div>
+    </a>
+    <nav class="menu">
+      <a href="#servicos">Serviços</a><a href="#equipamentos">Equipamentos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      <a class="nav-cta" target="_blank" href="https://wa.me/5583999542558?text=Olá%20Elétrica%20Martins!%20Gostaria%20de%20solicitar%20um%20orçamento.">⚡ Pedir orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="carousel" aria-hidden="true"><div class="slides"><div class="slide active"></div><div class="slide"></div><div class="slide"></div><div class="slide"></div></div></div>
+  <div class="container hero-content">
+    <span class="eyebrow">⚡ Oficina de ferramentas elétricas • Itaporanga-PB</span>
+    <h1>Força para sua<br><span>ferramenta voltar.</span></h1>
+    <p>Conserto e manutenção de ferramentas elétricas com avaliação cuidadosa, orçamento antes do serviço e garantia de 90 dias. Atendimento direto para profissionais, oficinas, construção e uso doméstico.</p>
+    <div class="hero-actions">
+      <a class="btn btn-red" target="_blank" href="https://wa.me/5583999542558?text=Olá%20Elétrica%20Martins!%20Tenho%20uma%20ferramenta%20para%20conserto%20e%20gostaria%20de%20solicitar%20uma%20avaliação.">💬 Solicitar orçamento</a>
+      <a class="btn btn-outline" href="#servicos">Ver serviços ↓</a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge"><b>90 dias</b><small>Garantia nos serviços</small></div>
+      <div class="hero-badge"><b>Diagnóstico</b><small>Avaliação do defeito</small></div>
+      <div class="hero-badge"><b>Itaporanga-PB</b><small>Atendimento local</small></div>
+    </div>
+  </div>
+  <div class="dots"><button class="dot active" aria-label="Slide 1"></button><button class="dot" aria-label="Slide 2"></button><button class="dot" aria-label="Slide 3"></button><button class="dot" aria-label="Slide 4"></button></div>
+</section>
+
+<div class="stats"><div class="container stats-grid"><div class="stat"><strong>Manutenção</strong><span>Preventiva e corretiva</span></div><div class="stat"><strong>Componentes</strong><span>Troca conforme avaliação</span></div><div class="stat"><strong>Orçamento</strong><span>Antes da execução</span></div><div class="stat"><strong>Contato direto</strong><span>Via WhatsApp</span></div></div></div>
+
+<section class="services" id="servicos"><div class="container"><div class="section-head reveal"><span class="kicker">Especialidades</span><h2>Serviços para sua ferramenta <span>render mais</span></h2><p>Atendimento em diferentes tipos de ferramentas elétricas, com foco em identificar o defeito e realizar o reparo necessário de forma responsável.</p></div><div class="service-grid">
+<div class="card reveal"><div class="ico">🔍</div><h3>Diagnóstico de falhas</h3><p>Avaliação de problemas elétricos e mecânicos para localizar a causa do defeito.</p></div>
+<div class="card reveal"><div class="ico">⚙️</div><h3>Manutenção preventiva</h3><p>Limpeza, inspeção e cuidados para reduzir desgaste e ajudar a aumentar a vida útil do equipamento.</p></div>
+<div class="card reveal"><div class="ico">🛠️</div><h3>Manutenção corretiva</h3><p>Reparo de ferramentas que já apresentam falhas de funcionamento.</p></div>
+<div class="card reveal"><div class="ico">⚡</div><h3>Parte elétrica</h3><p>Verificação de cabos, gatilhos, escovas de carvão, porta-escovas, induzidos e outros componentes.</p></div>
+<div class="card reveal"><div class="ico">🔄</div><h3>Induzido e bobina</h3><p>Avaliação e serviços relacionados ao conjunto elétrico da ferramenta.</p></div>
+<div class="card reveal"><div class="ico">🔩</div><h3>Troca de componentes</h3><p>Substituição de peças danificadas conforme diagnóstico e autorização do cliente.</p></div>
+</div></div></section>
+
+<section class="gallery" id="equipamentos"><div class="container"><div class="section-head center reveal"><span class="kicker">Equipamentos atendidos</span><h2>Ferramentas que <span>chegam à oficina</span></h2><p>Imagens em movimento destacando alguns dos equipamentos atendidos pela Elétrica Martins.</p></div></div>
+<div class="equipment-track"><div class="equipment-runner">
+<div class="equipment-item"><img src="slide1.jpg" alt="Furadeira elétrica"><div><h3>Furadeiras</h3><p>Diagnóstico, reparo e substituição de componentes.</p></div></div>
+<div class="equipment-item"><img src="slide2.jpg" alt="Martelete elétrico"><div><h3>Marteletes</h3><p>Manutenção elétrica e mecânica.</p></div></div>
+<div class="equipment-item"><img src="slide3.jpg" alt="Serra elétrica"><div><h3>Serras</h3><p>Avaliação e manutenção conforme necessidade.</p></div></div>
+<div class="equipment-item"><img src="slide4.jpg" alt="Esmerilhadeira"><div><h3>Esmerilhadeiras</h3><p>Reparo, revisão e troca de componentes.</p></div></div>
+<div class="equipment-item"><img src="slide1.jpg" alt="Furadeira elétrica"><div><h3>Furadeiras</h3><p>Diagnóstico, reparo e substituição de componentes.</p></div></div>
+<div class="equipment-item"><img src="slide2.jpg" alt="Martelete elétrico"><div><h3>Marteletes</h3><p>Manutenção elétrica e mecânica.</p></div></div>
+<div class="equipment-item"><img src="slide3.jpg" alt="Serra elétrica"><div><h3>Serras</h3><p>Avaliação e manutenção conforme necessidade.</p></div></div>
+<div class="equipment-item"><img src="slide4.jpg" alt="Esmerilhadeira"><div><h3>Esmerilhadeiras</h3><p>Reparo, revisão e troca de componentes.</p></div></div>
+</div></div></section>
+
+<section class="guarantee"><div class="container guarantee-wrap"><div class="big90 reveal">90</div><div class="reveal"><h2>Dias de garantia nos serviços</h2><p>Mais segurança para o cliente após o reparo. A garantia se aplica ao serviço realizado, de acordo com as condições do atendimento e do componente reparado ou substituído.</p></div></div></section>
+
+<section class="about" id="sobre"><div class="container about-grid"><div class="about-visual reveal"><img src="logo.png" alt="Logotipo da Elétrica Martins"></div><div class="reveal"><div class="section-head"><span class="kicker">Quem somos</span><h2>Elétrica <span>Martins</span></h2><p>Oficina de conserto e manutenção de ferramentas elétricas em Itaporanga-PB. O atendimento é voltado a quem precisa recuperar o equipamento e colocá-lo novamente em funcionamento, com avaliação e orçamento antes do reparo.</p></div><div class="checks"><div class="check"><b>✓</b> Atendimento direto</div><div class="check"><b>✓</b> Avaliação antes do reparo</div><div class="check"><b>✓</b> Diferentes ferramentas</div><div class="check"><b>✓</b> Garantia de 90 dias</div></div></div></div></section>
+
+<section class="process"><div class="container"><div class="section-head center reveal"><span class="kicker">Atendimento simples</span><h2>Como <span>funciona</span></h2></div><div class="steps"><div class="step reveal"><div class="num">01</div><h3>Entre em contato</h3><p>Conte qual ferramenta está apresentando problema ou leve o equipamento até a oficina.</p></div><div class="step reveal"><div class="num">02</div><h3>Avaliação</h3><p>O equipamento é analisado para identificar o possível defeito.</p></div><div class="step reveal"><div class="num">03</div><h3>Orçamento</h3><p>Você recebe as informações sobre o serviço necessário e o valor estimado.</p></div><div class="step reveal"><div class="num">04</div><h3>Reparo</h3><p>Após sua autorização, o serviço é realizado e você é avisado quando estiver pronto.</p></div></div></div></section>
+
+<section class="contact" id="contato"><div class="container contact-grid"><div class="contact-card reveal"><h3>Onde estamos</h3><div class="info-row"><small>Endereço</small><strong>Avenida Manoel Medeiros Maia, Itaporanga-PB</strong></div><div class="info-row"><small>WhatsApp / orçamento</small><strong>(83) 99954-2558</strong></div><div class="info-row"><small>Proprietário</small><strong>Ezequiel Lima Martins</strong></div><div class="info-row"><small>Colaborador</small><strong>Isaias Costa Neves</strong></div></div><div class="contact-card red reveal"><span class="kicker" style="color:#ffd600">Fale conosco</span><h3>Sua ferramenta apresentou problema?</h3><p>Envie uma mensagem pelo WhatsApp e informe qual equipamento está com defeito. A equipe orienta sobre o atendimento e a avaliação.</p><a class="btn" target="_blank" href="https://wa.me/5583999542558?text=Olá%20Elétrica%20Martins!%20Tenho%20uma%20ferramenta%20para%20conserto%20e%20gostaria%20de%20solicitar%20uma%20avaliação.">💬 Chamar no WhatsApp</a></div></div></section>
+</main>
+
+<footer><div class="container foot"><div class="foot-brand"><img src="logo.png" alt="Elétrica Martins"><div><strong>ELÉTRICA MARTINS</strong><p>Conserto e manutenção de ferramentas elétricas.</p></div></div><p>Itaporanga-PB • © 2026 Elétrica Martins</p></div></footer>
+<a class="float-wa" aria-label="WhatsApp Elétrica Martins" target="_blank" href="https://wa.me/5583999542558?text=Olá%20Elétrica%20Martins!%20Gostaria%20de%20solicitar%20um%20orçamento.">💬</a>
+<script>
+const slides=[...document.querySelectorAll('.slide')], dots=[...document.querySelectorAll('.dot')];let current=0,timer;
+function showSlide(i){slides[current].classList.remove('active');dots[current].classList.remove('active');current=(i+slides.length)%slides.length;slides[current].classList.add('active');dots[current].classList.add('active')}
+function start(){timer=setInterval(()=>showSlide(current+1),5000)}
+dots.forEach((d,i)=>d.addEventListener('click',()=>{clearInterval(timer);showSlide(i);start()}));start();
+const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
